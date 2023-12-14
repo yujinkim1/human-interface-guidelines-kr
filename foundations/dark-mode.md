@@ -30,8 +30,24 @@ iOS, iPadOS, macOS, 그리고 tvOS에서 많은 사람들이 Dark Mode를 기본
 
 몰입형 미디어 재생을 지원하는 앱은 사용자가 미디어에 집중할 수 있도록 영구적으로 다크 모드를 사용하면 좋습니다.
 
+## Dark Mode colors
+
+다크 모드의 컬러 팔레트는 더 어두운 배경색과 더 밝은 전경색을 포함합니다. 보통 라이트 모드에서 반전된 컬러로 구성하지만, 꼭 라이트 모드의 반전 컬러일 필요는 없습니다. 자세한 내용은 [Specifications](https://developer.apple.com/design/human-interface-guidelines/color#Specifications)를 참고하세요.
+
+<br />
+
+**현재 appearance 모드에 적용되는 컬러를 수용하세요.**
+시멘틱 컬러(macOS의 [labelColor](https://developer.apple.com/documentation/appkit/nscolor/1534657-labelcolor) 및 [controlColor](https://developer.apple.com/documentation/appkit/nscolor/1524856-controlcolor) 또는 iOS 및 iPadOS의 [separator](https://developer.apple.com/documentation/appkit/uikit/uicolor/3173139-separator))는 현재 appearance 모드에 따라 자동으로 적용됩니다. 커스텀 컬러가 필요할 때는 Xcode에서 앱 카탈로그에 컬러 세트를 추가하고 적용하세요. appearance 모드에 따라 적용되지 않는 하드 코딩된 컬러나 값은 사용하지 마세요.
+
+<br />
+
+**모든 appearance 모드에서 충분한 색상 대비를 갖추도록 하세요.**
+
+시스템 컬러를 사용하면 배경 및 전경 콘텐츠 간의 대비 비율을 좋게 만들 수 있습니다. 최소한 컬러 명암비가 4.5:1 보다 낮지 않아야 합니다. 커스텀 배경색과 전경색을 사용하는 경우 더 작은 텍스트에서 7:1 명암비를 갖추어야 합니다. 이러한 비율은 배경에서 전경 콘텐츠가 사용자 눈에 띄도록 보장하며, 콘텐츠가 접근성 지침을 충족하는 데 도움이 됩니다.
 
 
+**흰색 배경의 색을 부드럽게 하세요.**
 
+흰색 배경을 포함하는 콘텐츠 이미지를 표시하는 경우. 다크 모드에서 배경이 빛나지 않도록 이미지를 약간 어둡게 하는 것을 고려하세요.
 
 
