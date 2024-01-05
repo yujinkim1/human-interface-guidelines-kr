@@ -1,10 +1,16 @@
 ---
-description: 사용자들은 자신에게 맞는 방식으로 기기와 상호작용하는 방법을 개인화하기 위해 Apple의 손쉬운 사용 기능을 사용합니다.
 create-date: 2023-10-09
-update-date: 2023-12-10
+update-date: 2023-01-05
+supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
+<div align="center">
+  <img alt="intro" src="./.attachments/foundations-accessibility-intro@2x.png" width="740"/>
+</div>
+
 # Accessibility
+
+사용자는 자신에게 맞는 방식으로 기기와 상호작용하는 방법을 개인화하기 위해 Apple의 손쉬운 사용 기능을 사용합니다.
 
 대략 7명 중 1명은 기기와 상호 작용하는데 영향을 미치는 장애를 가지고 있습니다. 사람들은 나이, 기간 또는 다양한 수준의 중증 장애를 경험할 수 있습니다. 예를 들어 넘어짐으로 인한 손목 부상이나 목소리 손실과 같은 장애를 가지고 있는 사람은 다양한 기기와 상호 작용하는 방식에 불편할 수 있습니다.
 
@@ -69,6 +75,11 @@ VoiceOver, Assistive Touch 및 포인터 제어, 스위치 제어와 같은 보�
 
 예를 들어, 사용자가 제스처를 사용해서 테이블에서 행을 삭제할 수 없다면, 편집 모드를 통해 항목을 삭제하거나 항목 상세 보기에서 삭제 버튼을 제공하는 것이 좋습니다.
 
+<div align="center">
+  <img alt="Edit to delete." src="./.attachments/tap-to-delete@2x.png" width="294"/>
+  <img alt="Swipe to delete." src="./.attachments/swipe-to-delete@2x.png" width="294" />
+</div>
+
 <br />
 
 **가능한 경우, 앱의 핵심 기능을 물리적 상호 작용의 여러 유형을 통해 접근이 가능하도록 만드세요.**
@@ -113,6 +124,11 @@ iOS, iPadOS 및 tvOS에서는 뷰 내에서 조금 더 중요한 작업을 수�
 SwiftUI는 스위치를 제공하며, 이 스위치는 노브의 위치와 Fill 컬러로 상태를 나타냅니다. 스위치 레이블을 추가한다면 일부 사용자는 스위치가 켜져 있는지 아닌지를 더 쉽게 인식할 수 있습니다. 시스템에서 제공하는 스위치를 사용하면 iOS, iPadOS, tvOS, visionOS 및 watchOS에서 온/오프 레이블을 켜면 자동으로 스위치 내에 온/오프 글리프가 표시됩니다.
 > - 노브(knob): 스위치 컴포넌트를 구성하고 있는 하얀색 원형 손잡이
 > - 글리프(glyph): 특정 형태의 윤곽선 또는 이와 같은 역할을 하는 그래픽 이미지
+
+<div align="center">
+  <img alt="Without on/off labels." src="./.attachments/switches-without-labels@2x.png" width="204"/>
+  <img alt="With on/off labels." src="./.attachments/switches-with-labels@2x.png" width="204" />
+</div>
 
 <br />
 
