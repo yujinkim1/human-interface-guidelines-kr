@@ -1,10 +1,16 @@
 ---
-description: 사용자는 앱이나 게임을 즉시 사용할 수 있도록 도와주는 간결한 런치 경험을 높게 평가합니다.
 create-date: 2023-12-19
-update-date: 2023-12-22
+update-date: 2024-01-05
+supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
+<div align="center">
+  <img alt="Launch screen" src="./.attachments/patterns-launching-intro@2x.png" width="740"/>
+</div>
+
 # Launching
+
+사용자는 앱이나 게임을 즉시 사용할 수 있도록 도와주는 간결한 실행 경험을 높게 평가합니다.
 
 ## Best practices
 
@@ -49,8 +55,8 @@ iOS, iPadOS 및 tvOS에서는 시스템이 앱이나 게임이 시작되자 마�
 런치 스크린에 다른 요소를 포함하면 안 됩니다. 사용자가 첫 화면 간에 불쾌한 깜빡임을 경험할 수 있기 때문입니다. 또, 런치 스크린이 [Dark Mode](../founadtions/dark-mode.md)와 같이 현재 앱의 appearance와 일치하는지 확인하세요.
 
 <div align="center">
-  <img alt="Launch screen" src="./.attachments/launch-screen~dark@2x.png" width="294"/>
-  <img alt="First screen" src="./.attachments/first-screen~dark@2x.png" width="294" />
+  <img alt="Launch screen" src="./.attachments/launch-screen@2x.png" width="294"/>
+  <img alt="First screen" src="./.attachments/first-screen@2x.png" width="294" />
 </div>
 
 <br />
@@ -67,7 +73,7 @@ iOS, iPadOS 및 tvOS에서는 시스템이 앱이나 게임이 시작되자 마�
 
 <br />
 
-**광고는하지 마세요.**
+**광고는 하지 마세요.**
 
 런치 스크린은 브랜딩의 기회가 아닙니다. 스플래시 화면이나 "About" 윈도우처럼 보이는 화면을 만들지 마세요. 로고나 다른 브랜딩 요소를 포함하고 싶다면 앱의 첫 화면을 사용하세요. 만약에 앱이나 게임이 첫 화면으로 전환되기 전에 단색으로 표시하는 경우 동일한 단색만 표시하는 런치 스크린을 제작하세요.
 
