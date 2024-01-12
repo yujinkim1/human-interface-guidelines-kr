@@ -1,6 +1,6 @@
 ---
 create-date: 2023-12-07
-update-date: 2023-01-11
+update-date: 2023-01-12
 supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
@@ -305,12 +305,12 @@ App Store에서 표시되는 watchOS 앱 아이콘의 크기는 1024x1024 px 크
 
 ### Related
 
-[Apple Design Resources](https://developer.apple.com/design/resources/)
+- [Apple Design Resources](https://developer.apple.com/design/resources/)
 
 ### Developer documentation
 
-[Configuring your app icon](https://developer.apple.com/documentation/Xcode/configuring-your-app-icon)
+- [Configuring your app icon](https://developer.apple.com/documentation/Xcode/configuring-your-app-icon)
 
 ### Videos
 
-[App Icon Design](https://developer.apple.com/videos/play/wwdc2017/822)
+- [App Icon Design](https://developer.apple.com/videos/play/wwdc2017/822)
