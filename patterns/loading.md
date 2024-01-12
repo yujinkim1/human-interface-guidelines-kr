@@ -1,10 +1,16 @@
 ---
-description: 콘텐츠가 로드되는 동안 빈 화면이나 정적인 콘텐츠를 표시하지 마세요. 이러면 사용자는 앱이나 게임이 느려지거나 멈춘 것으로 생각하는 것을 방지할 수 있습니다.
 create-date: 2023-12-15
-update-date: 2023-12-15
+update-date: 2023-01-12
+supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
 # Loading
+
+<h2>콘텐츠가 로드되는 동안 빈 화면이나 정적인 콘텐츠를 표시하지 마세요. 이러면 사용자는 앱이나 게임이 느려지거나 멈춘 것으로 인지할 수 있습니다.</h2>
+
+<div align="center">
+  <img alt="patterns-loading-intro" src=".attachments/.loading/patterns-loading-intro@2x.png" width="740"/>
+</div>
 
 ## Best practices
 
@@ -16,7 +22,7 @@ update-date: 2023-12-15
 
 **콘텐츠가 로드되고 있다는 사실과 얼마나 걸릴지에 대한 정보를 명확하게 전달하세요.**
 
-콘텐츠가 즉시 표시되는게 이상적이지만 로딩이 잠시 걸리는 경우에는 시스템에서 제공하는 컴포넌트인 progress indicator를 사용해서 콘텐츠가 로드되고 있다는 것을 표시할 수 있습니다. 일반적으로 언제까지 로딩이 소요될지 알 수 있는 경우에는 determinate progress indicator를 사용하고, 로딩 지속시간을 측정할 수 없는 경우에는 indeterminate progress indicator를 사용합니다.(예: macOS의 Finder는 파일 복사가 완료되기 까지 얼마나 걸릴지를 판단하는 데 도움이 되도록 determinate progress bar와 간단한 설명 텍스트를 사용합니다.) 자세한 내용은 [Progress indicators]()를 참고하세요.
+콘텐츠가 즉시 표시되는게 이상적이지만 로딩이 잠시 걸리는 경우에는 시스템에서 제공하는 컴포넌트인 progress indicator를 사용해서 콘텐츠가 로드되고 있다는 것을 표시할 수 있습니다. 일반적으로 언제까지 로딩이 소요될지 알 수 있는 경우에는 determinate progress indicator를 사용하고, 로딩 지속시간을 측정할 수 없는 경우에는 indeterminate progress indicator를 사용합니다.(예: macOS의 Finder는 파일 복사가 완료되기 까지 얼마나 걸릴지를 판단하는 데 도움이 되도록 determinate progress bar와 간단한 설명 텍스트를 사용합니다.) 자세한 내용은 [Progress indicators](./progress-indicators.md)를 참고하세요.
 
 <br />
 
@@ -44,6 +50,6 @@ update-date: 2023-12-15
 
 ### Related
 
-[Launching]()
+[Launching](./launching.md)
 
-[Progress indicators]()
+[Progress indicators](./progress-indicators.md)
