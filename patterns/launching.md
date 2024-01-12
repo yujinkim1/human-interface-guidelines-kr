@@ -1,16 +1,16 @@
 ---
 create-date: 2023-12-19
-update-date: 2024-01-05
+update-date: 2024-01-12
 supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
-<div align="center">
-  <img alt="Launch screen" src="./.attachments/patterns-launching-intro@2x.png" width="740"/>
-</div>
-
 # Launching
 
-사용자는 앱이나 게임을 즉시 사용할 수 있도록 도와주는 간결한 실행 경험을 높게 평가합니다.
+<h2>사용자는 앱이나 게임을 즉시 사용할 수 있도록 도와주는 간결한 실행 경험을 높게 평가합니다.</h2>
+
+<div align="center">
+  <img alt="patterns-launching-intro" src=".attachments/.launching/patterns-launching-intro@2x.png" width="740"/>
+</div>
 
 ## Best practices
 
@@ -55,8 +55,8 @@ iOS, iPadOS 및 tvOS에서는 시스템이 앱이나 게임이 시작되자 마�
 런치 스크린에 다른 요소를 포함하면 안 됩니다. 사용자가 첫 화면 간에 불쾌한 깜빡임을 경험할 수 있기 때문입니다. 또, 런치 스크린이 [Dark Mode](../founadtions/dark-mode.md)와 같이 현재 앱의 appearance와 일치하는지 확인하세요.
 
 <div align="center">
-  <img alt="Launch screen" src="./.attachments/launch-screen@2x.png" width="294"/>
-  <img alt="First screen" src="./.attachments/first-screen@2x.png" width="294" />
+  <img alt="Launch screen" src=".attachments/.launching/launch-screen@2x.png" width="294"/>
+  <img alt="First screen" src=".attachments/.launching/first-screen@2x.png" width="294" />
 </div>
 
 <br />
