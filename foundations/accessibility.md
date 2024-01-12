@@ -1,16 +1,16 @@
 ---
 create-date: 2023-10-09
-update-date: 2023-01-05
+update-date: 2023-01-12
 supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
-<div align="center">
-  <img alt="intro" src="./.attachments/foundations-accessibility-intro@2x.png" width="740"/>
-</div>
-
 # Accessibility
 
-사용자는 자신에게 맞는 방식으로 기기와 상호작용하는 방법을 개인화하기 위해 Apple의 손쉬운 사용 기능을 사용합니다.
+<h2>사용자는 자신에게 맞는 방식으로 기기와 상호작용하는 방법을 개인화하기 위해 Apple의 손쉬운 사용 기능을 사용합니다.</h2>
+
+<div align="center">
+  <img alt="foundations-accessibility-intro" src="./.attachments/foundations-accessibility-intro@2x.png" width="740"/>
+</div>
 
 대략 7명 중 1명은 기기와 상호 작용하는데 영향을 미치는 장애를 가지고 있습니다. 사람들은 나이, 기간 또는 다양한 수준의 중증 장애를 경험할 수 있습니다. 예를 들어 넘어짐으로 인한 손목 부상이나 목소리 손실과 같은 장애를 가지고 있는 사람은 다양한 기기와 상호 작용하는 방식에 불편할 수 있습니다.
 
@@ -38,6 +38,8 @@ supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
 사용자는 앱이 어떤 상황에서라도 지원되는 모든 기기에서 즐기기를 원하기 때문에 기기의 방향, 크기, 해상도, 색상, 분할 화면과 같은 환경적 변화에 적응하도록 하세요. 최소한의 추가적인 노력만으로 사람들이 기기와 상호작용하는 방식을 개인화하기 위해 사용하는 손쉬운 사용 기능을 지원하도록 앱을 설계하세요. 표준 구성요소를 사용해서 인터페이스를 구현하면 텍스트의 크기, 굵기, 색상 반전, 대비 증가와 같은 여러 설정에 텍스트 및 컨트롤이 자동으로 적용됩니다.
 
+> **_NOTES_**
+> 
 > - 개인화(Personalization): 고객 또는 잠재 고객의 행동 및 니즈에 관한 인사이트를 바탕으로 이들에게 맞춤 설정된 경험을 제공하는 것
 
 **접근성을 테스트하세요.**
@@ -80,8 +82,6 @@ VoiceOver, Assistive Touch 및 포인터 제어, 스위치 제어와 같은 보�
   <img alt="Swipe to delete." src="./.attachments/swipe-to-delete@2x.png" width="294" />
 </div>
 
-<br />
-
 **가능한 경우, 앱의 핵심 기능을 물리적 상호 작용의 여러 유형을 통해 접근이 가능하도록 만드세요.**
 
 예를 들어, iPhone과 iPad의 카메라는 화면 상 버튼을 탭하거나 장치의 볼륨 다운 버튼을 눌러 사진을 찍을 수 있게 합니다. 이러한 대체 상호작용은 사람들에게 사진 촬영을 더 편리하게 만들 뿐만 아니라, 그들 중에서는 악력이나 민첩성이 제한된 사용자에게 추가 옵션을 제공할 수 있습니다.
@@ -123,6 +123,8 @@ iOS, iPadOS 및 tvOS에서는 뷰 내에서 조금 더 중요한 작업을 수�
 
 SwiftUI는 스위치를 제공하며, 이 스위치는 노브의 위치와 Fill 컬러로 상태를 나타냅니다. 스위치 레이블을 추가한다면 일부 사용자는 스위치가 켜져 있는지 아닌지를 더 쉽게 인식할 수 있습니다. 시스템에서 제공하는 스위치를 사용하면 iOS, iPadOS, tvOS, visionOS 및 watchOS에서 온/오프 레이블을 켜면 자동으로 스위치 내에 온/오프 글리프가 표시됩니다.
 
+> **_NOTES_**
+> 
 > - 노브(knob): 스위치 컴포넌트를 구성하고 있는 하얀색 원형 손잡이
 > - 글리프(glyph): 특정 형태의 윤곽선 또는 이와 같은 역할을 하는 그래픽 이미지
 
@@ -130,8 +132,6 @@ SwiftUI는 스위치를 제공하며, 이 스위치는 노브의 위치와 Fill 
   <img alt="Without on/off labels." src="./.attachments/switches-without-labels@2x.png" width="204"/>
   <img alt="With on/off labels." src="./.attachments/switches-with-labels@2x.png" width="204" />
 </div>
-
-<br />
 
 **링크에 색상 외에도 밑줄과 같은 시각적 표시를 제공하는 것을 고려해보세요.**
 
@@ -245,7 +245,9 @@ VoiceOver는 UI 컴포넌트에서의 접근성 정보를 사용하여 각 요�
 
 **필요한 경우 VoiceOver 로터를 지원하세요.**
 
-VoiceOver 사용자는 로터라는 컨트롤을 사용하여 제목, 링크 또는 기타 섹션 유형으로 문서나 웹페이지를 탐색할 수 있습니다. 로터는 또한 점자 키보드를 나타낼 수 있습니다. 앱에서 관련 항목을 로터에 식별하여 VoiceOver 사용자가 해당 항목 사이를 이동할 수 있도록 도울 수 있습니다. 자세한 내용은 [UIAccessibilityCustomRotor](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor) 및 [NSAccessibilityCustomRotor](https://developer.apple.com/documentation/appkit/nsaccessibilitycustomrotor)를 참조하세요.
+VoiceOver 사용자는 로터라는 컨트롤을 사용하여 제목, 링크 또는 기타 섹션 유형으로 문서나 웹페이지를 탐색할 수 있습니다. 로터는 또한 점자 키보드를 나타낼 수 있습니다. 앱에서 관련 항목을 로터에 식별하여 VoiceOver 사용자가 해당 항목 사이를 이동할 수 있도록 도울 수 있습니다. 개발자 가이드라인은 [UIAccessibilityCustomRotor](https://developer.apple.com/documentation/uikit/uiaccessibilitycustomrotor) 및 [NSAccessibilityCustomRotor](https://developer.apple.com/documentation/appkit/nsaccessibilitycustomrotor)를 참조하세요.
+
+<br />
 
 **iPadOS, macOS, visionOS에서는 키보드를 사용하여 앱의 모든 구성 요소를 탐색하고 상호 작용할 수 있도록 해야 합니다.**
 
@@ -262,6 +264,8 @@ Dynamic Type을 사용하면 사용자가 원하는 글꼴 크기를 선택할 �
 **글꼴 크기가 커짐에 따라 텍스트를 최소한으로 자르세요.**
 
 일반적으로 가장 큰 표준 글꼴 크기와 동일한 양의 유용한 텍스트를 가장 큰 접근성 글꼴 크기에서 표시하도록 노력하세요. 텍스트를 자르지 말고 스크롤 가능한 영역에서 텍스트를 자를 때는 사용자가 본문의 나머지 부분을 읽을 수 있는 별도의 뷰를 열 수 있도록 해야 합니다. 레이블에서 텍스트를 자르지 않으려면 레이블이 유용한 양의 텍스트를 표시할 수 있도록 필요한 만큼의 줄을 사용하도록 구성하세요. 개발자 가이드라인은 [numberOfLines](https://developer.apple.com/documentation/uikit/uilabel/1620539-numberoflines)를 참고하세요.
+
+<br />
 
 **큰 글꼴 크기에서 레이아웃을 조정하는 것을 고려하세요.**
 
