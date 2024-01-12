@@ -23,3 +23,4 @@
 ### Patterns
 
 - [Launching](./patterns/launching.md)
+- [Loading](./patterns/loading.md)
