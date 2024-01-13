@@ -19,6 +19,7 @@
 - [Accessibility](./foundations/accessibility.md)
 - [App Icons](./foundations/app-icons.md)
 - [Branding](./foundations/branding.md)
+- [Icons](./foundations/icons.md)
 
 ### Patterns
 
