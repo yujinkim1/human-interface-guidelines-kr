@@ -16,7 +16,7 @@ supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
 글리프 또는 템플릿 이미지라고도 하는 인터페이스 아이콘을 디자인하거나 SF Symbol 앱에서 원하는 심볼을 선택해 사용하거나 필요에 맞게 커스텀할 수 있습니다. 인터페이스 아이콘은 모두 검은색과 선명한 컬러를 사용해서 모양을 정의합니다. 시스템은 각 이미지의 겅은색 영역에 다른 컬러를 적용할 수 있습니다. 자세한 내용은 [SF Symbols](https://develoepr.apple.com/design/human-interface-guidelines/sf-symbols)를 참고하세요.
 
-### Best practices
+## Best practices
 
 **알아볼 수 있고 매우 단순화된 디자인을 만드세요.**
 
