@@ -155,3 +155,25 @@ supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 접근성 있는 앱을 만드는 방법에 대한 자세한 내용은 [Accessibility](/foundations/accessibility.md)을 참고하세요.
 
 ## Languages
+
+사용자는 텍스트의 언어와 날짜, 시간, 금액과 같은 값의 형식을 선택하여 기기를 사용자 정의하기를 기대합니다. 전 세계 관객을 환영하려면 먼저 국제화(Internationalization)라는 프로세스를 사용하여 자신의 것이 아닌 언어 및 지역을 처리하고 특정 로케일에 대한 번역된 텍스트 및 리소스를 제공하세요. 국제화에 대한 개요는 앱을 새로운 시장으로 확장을 참조하고, 로컬화에 대한 개발자 안내는 로컬화를 참조하세요.
+
+## Platform considerations
+
+_iOS, iPadOS, macOS, tvOS, visionOS, watchOS에 대한 추가 고려사항은 없습니다._
+
+## Resources
+
+### Related
+
+- [Writing inclusively](https://help.apple.com/applestyleguide/#/apdcb2a65d68)
+- [Accessibility](./foundations/accessibility.md)
+
+### Developer documentation
+
+- [Localization](https://developer.apple.com/documentation/xcode/localization)
+
+### Videos
+
+- [The practice of inclusive design](https://developer.apple.com/videos/play/wwdc2021/10275)
+- [The process of inclusive design](https://developer.apple.com/videos/play/wwdc2021/10304)
