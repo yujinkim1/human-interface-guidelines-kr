@@ -1,6 +1,6 @@
 ---
-create-date: 2023-01-11
-update-date: 2023-01-29
+created-date: 2023-01-11
+updated-date: 2023-02-04
 supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
@@ -20,20 +20,20 @@ supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 
 각 개인의 관점은 독특하고 구체적이며 동시에 다이내믹한 인간의 특성 교차점으로 이루어져 있지만, 모든 관점은 모든 이가 공유하는 인간의 특성과 경험에서 비롯됩니다. 이에는 다음이 포함됩니다:
 
-- 나이
-- 성별 및 성 정체성
-- 인종과 민족
-- 성적 성향
-- 신체적 특성
-- 인지적 특성
-- 영구적이거나 일시적인 상황에 따른 장애
-- 언어와 문화
-- 종교
-- 교육
-- 정치 또는 철학적 견해
-- 사회 및 경제적 맥락
+- 나이(Age)
+- 성별 및 성 정체성(Gender and gender identity)
+- 인종과 민족(Race and ethnicity)
+- 성적 성향(Sexuality)
+- 신체적 특성(Physical attributes)
+- 인지적 특성(Cognitive attributes)
+- 영구적이거나 일시적인 상황에 따른 장애(Permanent, temporary or situational disabilities)
+- 언어와 문화(Language and culture)
+- 종교(Religion)
+- 교육(Education)
+- 정치 또는 철학적 견해(Political or philosophical opinions)
+- 사회 및 경제적 맥락(Social and economic context)
 
-다양한 관점에서 앱을 검토할 때, 논란을 일으킬 수 있는 콘텐츠를 찾지 않을 수 있도록 하세요. 비록 어떤 앱도 논란을 일으킬만 한 자료나 경험을 포함해서는 안되지만, 논란이 아예 없는 앱이 포괄적인 앱이라고 할 수는 없습니다. 포괄성에 중점을 두면 잠재적으로 논란을 일으킬 수 있는 콘텐츠를 피하면서도 모든 사용자가 즐길 수 있는 환영받는 앱을 만들 수 있습니다.
+다양한 관점에서 앱을 검토할 때, 논란을 일으킬 수 있는 콘텐츠를 포함하는 것은 피하세요. 비록 어떤 앱도 논란을 일으킬만한 자료나 경험을 포함해서는 안 되지만, 논란이 아예 없는 앱이 포괄적인 앱이라고 볼 수는 없습니다. 포괄성을 고려하면 잠재적으로 논란을 일으킬 수 있는 콘텐츠를 피하면서도 모든 사용자에게 환영받을 수 있습니다.
 
 ## Welcoming language
 
