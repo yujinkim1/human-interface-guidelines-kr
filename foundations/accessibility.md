@@ -1,6 +1,6 @@
 ---
-create-date: 2023-10-09
-update-date: 2023-01-14
+created-date: 2023-10-09
+updated-date: 2024-02-12
 supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 ---
 
@@ -332,3 +332,66 @@ iOS, iPadOS, tvOS, visionOS 및 watchOS에서 사용자는 텍스트와 심볼�
 많은 색맹자가 파란색과 주황색을 구별하기 어렵다는 것을 알아두세요. 다른 문제가 될 수 있는 조합으로는 빨강과 녹색, 빨강과 검정, 그리고 빨강 또는 녹색이 회색과 결합된 것이 있습니다. 상태나 값을 전달하기 위해 색상 조합을 사용하는 것이 합리적인 경우 추가적인 시각적 지시자를 포함하여 모든 사용자가 정보를 인식할 수 있도록 합니다. 예를 들어 오프라인 및 온라인을 나타내기 위해 빨간색과 녹색 원을 사용하는 대신 빨간색 사각형과 녹색 원을 사용할 수 있습니다. 일부 이미지 편집 소프트웨어에는 색맹에 대한 증명을 위한 도구가 포함되어 있을 수 있습니다.
 
 <br />
+
+**화면이 올바른 색상 반전을 표현할 수 있도록 보장하세요.**
+
+사용자는 어두운 환경에서 색상 반전을 켜는 것을 선호합니다. 스마트 반전 모드에서 이미지, 비디오 및 앱 아이콘, 템플릿 이미지는 반전되지 않으며 UI는 어두워진 상태를 유지합니다. 앱이나 게임을 테스트하여 반전되지 않도록 해야할 요소를 찾으세요.
+
+<br />
+
+**가시성을 향상시키기 위해 강한 대비의 색상을 사용하세요.**
+
+글꼴 크기와 굵기, 색상의 밝기, 화면 해상도를 포함해 여러 요소가 색상의 지각에 영향을 미칩니다. 텍스트, 글리프 및 컨트롤과 같은 시각적 요소의 색 대비를 높이면 더 많은 사람들이 다양한 상황에서 앱을 사용할 수 있게 도울 수 있습니다. UI에서 인접한 색상의 대비가 최소 허용 수준을 충족하는지 확인하려면 Xcode의 "접근성 검사기"나 [Wwb Content Accessibility Guidelines (WCAG)](https://www.w3.org/TR/WCAG21/) 색 대비 공식을 기반으로 한 온라인 색상 계산기를 사용할 수 있습니다. 일반적으로 글꼴 크기가 작거나 가벼운 경우 가시성을 확보하기 위해 대비를 높여야 합니다. 아래의 값들을 참고로 사용하세요.
+
+## Motion
+
+**꼭 필요한 애니메이션이 아니라면 사용하는 것은 피하세요.**
+
+일반적으로 애니메이션이 없어도 앱을 사용할 수 있도록 하는 것이 좋습니다.
+
+<br />
+
+**동작 줄이기가 켜져 있을 때 애니메이션을 적용하세요.**
+
+사용자는 줌, 스케일링, 스핀, 주변 모션과 같은 효과를 포함하는 애니메이션을 볼 때 산만하게 느끼거나 어지러움 또는 메스꺼움을 경험하는 경우 동작 줄이기를 켤 수 있습니다. 이 설정에 대응해서 애니메이션을 끄거나 줄이도록 해야합니다. 자세한 내용은 []()를 참고하세요. 중요한 정보를 전달하기 위해 애니메이션을 사용하는 경우 애니메이션이 없는 디자인도 적용하거나 애니메이션의 물리적 효과를 줄이는 것을 고려하세요:
+
+- 바운스 효과를 줄이기 위해 스프링을 조이기
+- z축 레이어의 깊이 변화를 애니메이션화하지 않기
+- 블러 효과의 내부 또는 외부로 애니메이션화하지 않기
+- 모션을 피하기 위해 슬라이드를 페이드 효과로 대체하기
+
+**사용자가 비디오와 기타 모션 효과를 제어할 수 있도록 하세요.**
+
+버튼이나 기타 제어 방법을 제공하지 않고 자동으로 비디오나 효과를 재생하도록 설계하지 마세요.
+
+<br />
+
+**움직이거나 깜빡이는 요소를 표시할 때 조심하세요.**
+
+미묘한 움직임과 깜빡임은 사람들의 주의를 끌 수 있지만 이러한 효과는 주의를 산만하게 만들 수 있으며 시각 장애가 있는 사람들에게는 유용하지 않을 수 있습니다. 더 나쁜 경우 일부 깜빡이는 요소는 간질 발작을 일으킬 수 있습니다. 모든 경우에 정보를 전달하는 유일한 방법으로 움직임과 깜빡임을 사용하지 말아주세요.
+
+이미지와 함께 모션을 경험하는 동안 사람들이 편안하게 머무를 수 있도록  Motion > visionOS에서 확인하세요. 개발자 지침은 Improving accessibility support in your visionOS app을 참조하세요.
+
+## Platform considerations
+
+_iOS, iPadOS, macOS, tvOS, watchOS에 대한 추가 고려사항은 없습니다._
+
+### visionOS
+
+**머리에 콘텐츠를 고정하지 않도록 피하세요.**
+
+사용자가 갇힌 느낌이나 제한된 느낌을 받을 수 있을 뿐만 아니라 머리에 콘텐츠를 고정하면 해당 콘텐츠와 상호 작용하기 위해 포인터 컨트롤을 사용할 수 없습니다. 고정된 콘텐츠는 시각이 낮은 사용자가 내용을 재위치시키거나 가까이 이동할 수 없어서 읽기 어렵게 만들 수도 있습니다.
+
+## Resources
+
+### Related
+
+- [Inclusion](./inclusion.md)
+
+### Developer documentation
+
+- [Accessibility for developers](https://developer.apple.com/accessibility/)
+- [Accessibility](https://developer.apple.com/documentation/Accessibility)
+- [Accessibility modifiers](https://developer.apple.com/documentation/SwiftUI/View-Accessibility)
+- [Accessibility for UIKit](https://developer.apple.com/documentation/uikit/accessibility_for_uikit)
+- [Accessibility for AppKit](https://developer.apple.com/documentation/appkit/accessibility_for_appkit)
