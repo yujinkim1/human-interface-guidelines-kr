@@ -18,6 +18,8 @@ supported-platforms:
   <img alt="patterns-launching-intro" src=".attachments/.launching/patterns-launching-intro@2x.png" width="740"/>
 </div>
 
+<br />
+
 ## Best practices
 
 **플랫폼에 필요한 경우에만 런치 스크린을 제공하세요.**
