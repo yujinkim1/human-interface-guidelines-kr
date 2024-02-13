@@ -9,7 +9,7 @@ supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
 <h2>사용자는 자신에게 맞는 방식으로 기기와 상호작용하는 방법을 개인화하기 위해 Apple의 손쉬운 사용 기능을 사용합니다.</h2>
 
 <div align="center">
-  <img alt="foundations-accessibility-intro" src="./.attachments/foundations-accessibility-intro@2x.png" width="740"/>
+  <img alt="foundations-accessibility-intro" src=".attachments/.accessibility/foundations-accessibility-intro@2x.png" width="740"/>
 </div>
 
 <br />
@@ -76,8 +76,8 @@ VoiceOver, Assistive Touch 및 포인터 제어, 스위치 제어와 같은 보�
 예를 들어, 사용자가 제스처를 사용해서 테이블에서 행을 삭제할 수 없다면, 편집 모드를 통해 항목을 삭제하거나 항목 상세 보기에서 삭제 버튼을 제공하는 것이 좋습니다.
 
 <div align="center">
-  <img alt="Edit to delete." src="./.attachments/tap-to-delete@2x.png" width="294"/>
-  <img alt="Swipe to delete." src="./.attachments/swipe-to-delete@2x.png" width="294" />
+  <img alt="Edit to delete." src=".attachments/.accessibility/tap-to-delete@2x.png" width="294"/>
+  <img alt="Swipe to delete." src=".attachments/.accessibility/swipe-to-delete@2x.png" width="294" />
 </div>
 
 **가능하면, 두 가지 이상의 물리적 상호 작용으로 앱의 핵심 기능을 사용할 수 있도록 만드세요.**
@@ -127,8 +127,8 @@ SwiftUI는 스위치를 제공하며, 이 스위치는 노브의 위치와 채�
 > - 글리프(glyph): 특정 형태의 윤곽선 또는 이와 같은 역할을 하는 그래픽 이미지
 
 <div align="center">
-  <img alt="Without on/off labels." src="./.attachments/switches-without-labels@2x.png" width="204"/>
-  <img alt="With on/off labels." src="./.attachments/switches-with-labels@2x.png" width="204" />
+  <img alt="Without on/off labels." src=".attachments/.accessibility/switches-without-labels@2x.png" width="204"/>
+  <img alt="With on/off labels." src=".attachments/.accessibility/switches-with-labels@2x.png" width="204" />
 </div>
 
 **링크에 색상 외에도 밑줄과 같은 시각적 표시를 제공하는 것이 좋습니다.**
@@ -225,8 +225,8 @@ VoiceOver는 UI 컴포넌트의 손쉬운 사용 정보를 사용하여 각 요�
 예를 들어서 아래 레이아웃은 근접 및 가운데 맞춤에 의존해서 각 문구가 위 이미지의 캡션임을 알려주고 있습니다. 그러나 VoiceOver에게 각 이미지를 해당 문구와 함께 그룹화해야 한다고 알리지 않으면 VoiceOver는 "다양한 망고를 담을 수 있는 큰 용기입니다. 아티초크를 담을 수 있는 큰 용기입니다. 망고는 Mangifera속에 속하는 나무에서 나옵니다. 아티초크는 다양한 종의 엉겅퀴에서 나옵니다."와 같이 읽습니다. 이는 VoiceOver가 기본적으로 위에서 아래로 요소를 읽기 때문에 발생합니다. 개발자 가이드라인은 [shouldGroupAccessibilityChildren](https://developer.apple.com/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren)과 [accessibilityTitleUIElement](https://developer.apple.com/documentation/appkit/nsaccessibility/1535155-accessibilitytitleuielement)를 참고하세요.
 
 <div align="center">
-  <img alt="망고는 Mangifera속에 속하는 나무에서 나옵니다." src="./.attachments/.accessibility/mangoes@2x.png" width="294"/>
-  <img alt="아티초크는 다양한 종의 엉겅퀴에서 나옵니다." src="./.attachments/.accessibility/artichokes@2x.png" width="294" />
+  <img alt="망고는 Mangifera속에 속하는 나무에서 나옵니다." src=".attachments/.accessibility/mangoes@2x.png" width="294"/>
+  <img alt="아티초크는 다양한 종의 엉겅퀴에서 나옵니다." src=".attachments/.accessibility/artichokes@2x.png" width="294" />
 </div>
 
 **보이는 콘텐츠나 레이아웃이 변경되면 VoiceOver에 알려야합니다.**
