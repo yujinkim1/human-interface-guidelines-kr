@@ -1,7 +1,13 @@
 ---
 create-date: 2023-12-19
-update-date: 2024-01-12
-supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
+update-date: 2024-02-13
+supported-platforms:
+  - iOS
+  - iPadOS
+  - macOS
+  - tvOS
+  - watchOS
+  - visionOS
 ---
 
 # Launching
@@ -43,16 +49,16 @@ iOS, iPadOS 및 tvOS에서는 시스템이 앱이나 게임이 시작되자 마�
 
 ## Launch screens
 
-모든 플랫폼이 시작 화면을 필요로 하는 것은 아닙니다.
+모든 플랫폼이 런치 스크린을 필요로 하는 것은 아닙니다.
 
 - iOS, iPadOS 및 tvOS 앱은 런치 스크린을 제공해야 합니다.
 - macOS, visionOS 및 watchOS 앱은 런치 스크린이 필요하지 않습니다.
 
-런치 스크린은 온보딩이나 스플래시 화면도 아니고 예술적인 표현의 기회도 아닙니다. 런치 스크린의 유일한 기능은 앱이 빠르게 시작되고 바로 사용이 가능하다는 인식을 향상시키는 것입니다.
+런치 스크린은 온보딩이나 스플래시 화면도 아니고 예술적인 표현을 위한 것도 아닙니다. 런치 스크린의 유일한 기능은 앱이 빠르게 시작되고 바로 사용이 가능하다는 인식을 향상시키는 것입니다.
 
-**첫 화면과 거의 동일한 런치 스크린을 디자인하세요.**
+**앱의 첫 번째 뷰와 거의 동일한 런치 스크린을 디자인하세요.**
 
-런치 스크린에 다른 요소를 포함하면 안 됩니다. 사용자가 첫 화면 간에 불쾌한 깜빡임을 경험할 수 있기 때문입니다. 또, 런치 스크린이 [Dark Mode](../founadtions/dark-mode.md)와 같이 현재 앱의 appearance와 일치하는지 확인하세요.
+런치 스크린에 다른 요소를 포함하면 안 됩니다. 사용자가 첫 번째 뷰 간에 이질감을 느낄 수 있기 때문입니다. 또, 런치 스크린이 [Dark Mode](../founadtions/dark-mode.md)와 같이 현재 앱의 appearance와 일치하는지 확인하세요.
 
 <div align="center">
   <img alt="Launch screen" src=".attachments/.launching/launch-screen@2x.png" width="294"/>
@@ -69,41 +75,41 @@ iOS, iPadOS 및 tvOS에서는 시스템이 앱이나 게임이 시작되자 마�
 
 **런치 스크린 경험을 중요하게 생각하지 마세요.**
 
-첫 화면으로 전환을 부드럽게 하는 디자인하고, 사용자가 바로 앱을 사용하지 못하게 하는 런치 스크린은 피하세요.
+첫 번째 뷰로의 전환을 부드럽게 하는 디자인하고, 사용자가 바로 앱을 사용하지 못하게 하는 런치 스크린은 사용하지 마세요.
 
 <br />
 
 **광고는 하지 마세요.**
 
-런치 스크린은 브랜딩의 기회가 아닙니다. 스플래시 화면이나 "About" 윈도우처럼 보이는 화면을 만들지 마세요. 로고나 다른 브랜딩 요소를 포함하고 싶다면 앱의 첫 화면을 사용하세요. 만약에 앱이나 게임이 첫 화면으로 전환되기 전에 단색으로 표시하는 경우 동일한 단색만 표시하는 런치 스크린을 제작하세요.
+런치 스크린은 브랜드를 홍보하는 용도가 아닙니다. 스플래시 화면이나 "About"처럼 보이는 화면을 만들지 마세요. 로고나 다른 브랜딩 요소를 포함하고 싶다면 앱의 첫 번째 뷰를 사용하세요. 만약에 앱이나 게임이 첫 첫 번째 뷰로 전환되기 전에 단색으로 표시하는 경우 동일한 단색만 표시하는 런치 스크린을 만드세요.
 
 <br />
 
 ## Platform considerations
 
-*macOS나 watchOS에 대한 추가 사항은 없습니다.*
+_macOS, watchOS에 대한 추가 사항은 없습니다._
 
 ## iOS, iPadOS
 
-**적절한 orientation으로 실행하세요.**
+**적절한 방향으로 실행하세요.**
 
-앱이 세로 및 가로 모드를 모두 지원하는 경우 현재 기기의 orientation을 사용해서 실행하세요. 앱이 만약 한 가지 orientation만 지원하는 경우 해당 orientation으로 시작하고 필요에 따라 사용자가 기기를 회전할 수 있도록 하세요. 가로 모드 전용 앱은 기기를 왼쪽이나 오른쪽으로 회전시켜도 올바르게 응답해야 합니다. 자세한 내용은 [Layout](foundations/layout.md)을 참고하세요.
+앱이 세로 모드와 가로 모드를 모두 지원하는 경우 기기의 현재 방향을 사용해서 실행하세요. 앱이 만약 한 가지 방향만 지원하는 경우 해당 방향으로 실행하고 필요에 따라 사용자가 기기를 회전할 수 있도록 하세요. 가로 모드 전용 앱은 기기를 왼쪽이나 오른쪽으로 회전시켜도 올바르게 작동해야 합니다. 자세한 내용은 [Layout](foundations/layout.md)을 참고하세요.
 
 ## tvOS
 
 tvOS 앱에서 자주 사용되는 [layered images](foundations/images.md/#Layered-images)와는 달리, 런치 스크린은 정적입니다.
 
-**라이브 시청 앱의 경우 사용자가 앱을 시작한 후 곧바로 재생을 자동으로 시작하는 것을 고려해보세요.**
+**라이브 앱의 경우 사용자가 앱을 시작한 후 곧바로 자동 재생을 시작하는 것이 좋습니다.**
 
 사용자는 TV 시청하기 위해 앱을 사용하므로, 일정 시간 동안 활동이 없을 경우 최근에 시청한 라이브 콘텐츠나 새로운 콘텐츠를 재생하는 것이 좋을 수 있습니다. 자세한 내용은 [Live-viewing apps](./live-viewing-apps.md)를 참고하세요.
 
 ## visionOS
 
-**가능하면 빠르게 실행하세요.**
+**가능하면 빨리 실행하세요.**
 
 만약 앱이 빠르게 콘텐츠를 로드하지 않은 경우라면 시스템은 앱 아이콘을 포함한 윈도우를 표시합니다. 이러한 윈도우는 Shared Space에서 실행될 때 나타나는 첫 윈도우와 동일한 배경과 크기를 사용합니다. 앱이 Full Space에서 실행 중인 경우 윈도우는 시스템에서 정의한 크기를 사용합니다.
 
-**앱이 완전히 몰입된 경우에도 Shared Space에서 실행하는 것을 고려하세요.**
+**앱이 완전히 몰입할 수 있는 경우에도 Shared Space에서 실행하는 것을 고려하세요.**
 
 Shared Space에서 윈도우를 열면 로드 시간을 확보하면서 앱에 대한 더 많은 컨텍스트를 제공할 수 있으며 완전 몰입형 경험을 제공할 수 있습니다. 자세한 내용은 [Immersive experiences](foundations/immersive-experiences.md)를 참고하세요.
 
@@ -112,17 +118,14 @@ Shared Space에서 윈도우를 열면 로드 시간을 확보하면서 앱에 �
 ### Related
 
 - [Onboarding](./onboarding.md)
-
 - [Loading](./loading.md)
 
 ### Developer documentation
 
 - [Specifying your app's launch screen](https://developer.apple.com/documentation/uikit/app_and_environment/specifying-your-app-s-launch-screen)
-
 - [Responding to the launch of your app](https://developer.apple.com/documentation/uikit/app_and_environment/responding_to_the_launch_of_your_app)
 
 ### Videos
 
 - [Optimizing App Launch](https://developer.apple.com/videos/play/wwdc2019/423/)
-
 - [Love at First Launch](https://developer.apple.com/videos/play/wwdc2017/816/)
