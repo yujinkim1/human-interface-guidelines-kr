@@ -214,21 +214,24 @@ VoiceOver가 장식 역할의 이미지를 설명하도록 하면 사용자의 �
 
 **VoiceOver 사용자가 앱의 모든 요소를 탐색할 수 있는지 확인하세요.**
 
-VoiceOver는 UI 컴포넌트에서의 접근성 정보를 사용하여 각 요소의 위치와 해당 요소가 수행할 수 있는 작업을 이해하는 데 도움을 줍니다. 시스템에서 제공하는 UI 컴포넌트는 기본적으로 이러한 접근성 정보를 포함하지만, 사용자가 정보를 제공하지 않으면 VoiceOver가 맞춤형 요소를 발견하고 사용하는 데 도움을 줄 수 없습니다. 개발자 가이드라인은 [Accessibility modifiers](https://developer.apple.com/documentation/SwiftUI/View-Accessibility)를 참고하세요.
+VoiceOver는 UI 컴포넌트의 손쉬운 사용 정보를 사용하여 각 요소의 위치와 해당 요소가 수행할 수 있는 작업을 이해할 수 있도록 도움을 줍니다. 시스템에서 제공하는 UI 컴포넌트는 기본적으로 손쉬운 사용 정보를 포함하지만, 사용자 정의 컴포넌트는 정보를 제공해주지 않는 한 VoiceOver가 요소를 발견하고 사용하는 데 도움을 줄 수 없습니다. 개발자 가이드라인은 [Accessibility modifiers](https://developer.apple.com/documentation/SwiftUI/View-Accessibility)를 참고하세요.
 
 <br />
 
-**요소가 그룹화되거나 정렬되거나 연결된 방식을 지정함으로써 VoiceOver경험을 개선하세요.**
+**컴포넌트를 그룹화하거나, 정렬하거나, 연결하는 방법을 지정하여 VoiceOver 사용 경험을 개선하세요.**
 
-근접성, 정렬 및 기타 맥락 힌트는 시각적으로 인식 가능한 요소 간의 관계를 시각적으로 인식하는 데 시력이 있는 사람들에게 도움이 되지만, 이러한 힌트는 VoiceOver 사용자에게는 잘 작동하지 않습니다. 앱에서 시각적 요소 간의 관계가 시각적인 경우 VoiceOver에게 이러한 관계를 설명하세요.
+근접성, 정렬 및 기타 상황별 신호는 시각 장애인이 요소 간의 관계를 인식하는 데 도움이 될 수 있지만 VoiceOver 사용자에게는 이러한 신호가 제대로 전달되지 않을 수 있습니다. 앱에서 요소 간의 관계가 시각적으로만 표시되는 위치를 검사하고 이러한 관계를 VoiceOver에게 알려줘야 합니다.
 
-예를 들어 아래 레이아웃은 각 구문이 위의 이미지의 캡션임을 나타내기 위해 근접성 및 가운데 정렬을 사용합니다. 그러나 각 이미지가 해당 구문과 그룹화되어야 한다고 VoiceOver에게 알리지 않으면 VoiceOver는 "여러 가지 망고를 담고 있는 큰 용기. 다양한 종류의 열매를 담고 있는 큰 용기"와 같이 읽습니다. 이는 VoiceOver가 기본적으로 위에서 아래로 요소를 읽기 때문에 발생합니다. 개발자 가이드라인은 [shouldGroupAccessibilityChildren](https://developer.apple.com/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren)과 [accessibilityTitleUIElement](https://developer.apple.com/documentation/appkit/nsaccessibility/1535155-accessibilitytitleuielement)를 참고하세요.
+예를 들어서 아래 레이아웃은 근접 및 가운데 맞춤에 의존해서 각 문구가 위 이미지의 캡션임을 알려주고 있습니다. 그러나 VoiceOver에게 각 이미지를 해당 문구와 함께 그룹화해야 한다고 알리지 않으면 VoiceOver는 "다양한 망고를 담을 수 있는 큰 용기입니다. 아티초크를 담을 수 있는 큰 용기입니다. 망고는 Mangifera속에 속하는 나무에서 나옵니다. 아티초크는 다양한 종의 엉겅퀴에서 나옵니다."와 같이 읽습니다. 이는 VoiceOver가 기본적으로 위에서 아래로 요소를 읽기 때문에 발생합니다. 개발자 가이드라인은 [shouldGroupAccessibilityChildren](https://developer.apple.com/documentation/objectivec/nsobject/1615143-shouldgroupaccessibilitychildren)과 [accessibilityTitleUIElement](https://developer.apple.com/documentation/appkit/nsaccessibility/1535155-accessibilitytitleuielement)를 참고하세요.
 
-<br />
+<div align="center">
+  <img alt="망고는 Mangifera속에 속하는 나무에서 나옵니다." src="./.attachments/.accessibility/mangoes@2x.png" width="294"/>
+  <img alt="아티초크는 다양한 종의 엉겅퀴에서 나옵니다." src="./.attachments/.accessibility/artichokes@2x.png" width="294" />
+</div>
 
-**보이는 콘텐츠나 레이아웃이 변경되면 VoiceOver에 알려주세요.**
+**보이는 콘텐츠나 레이아웃이 변경되면 VoiceOver에 알려야합니다.**
 
-예상치 못한 콘텐츠나 레이아웃 변경은 VoiceOver 사용자에게 매우 혼란스러울 수 있습니다. 왜냐하면 변경으로 인해 콘텐츠에 대한 정신적인 지도가 더 이상 정확하지 않기 때문입니다. 보이는 변경 사항을 보고하여 VoiceOver 및 다른 보조 기술이 사람들이 콘텐츠에 대한 이해를 업데이트하는 데 도움을 줄 수 있습니다. 개발자 가이드라인은 [UIAccessibility.Notification (UIKit)](https://developer.apple.com/documentation/uikit/uiaccessibility/notification) 또는 [NSAccessibility.Notification (AppKit)](https://developer.apple.com/documentation/appkit/nsaccessibility/notification)을 참조하세요.
+예상치 못한 콘텐츠나 레이아웃 변경은 VoiceOver 사용자에게 매우 혼란스러울 수 있습니다. 왜냐하면 변경으로 인해 콘텐츠에 대한 파악점이 더 이상 정확하지 않기 때문입니다. VoiceOver 및 기타 보조 기술이 사용자가 콘텐츠에 대한 이해를 업데이트하는 데 도움이 될 수 있도록 눈에 띄는 변경 사항을 알리는 것이 중요합니다. 개발자 가이드라인은 [UIAccessibility.Notification (UIKit)](https://developer.apple.com/documentation/uikit/uiaccessibility/notification) 또는 [NSAccessibility.Notification (AppKit)](https://developer.apple.com/documentation/appkit/nsaccessibility/notification)을 참조하세요.
 
 <br />
 
