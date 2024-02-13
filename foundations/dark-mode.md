@@ -1,10 +1,24 @@
 ---
-description: 다크 모드는 어두운 환경에 적합한 편안한 시청 경험을 제공하기 위해 어두운 색상 팔레트를 사용하는 시스템 전역 외형 설정입니다.
-create-date: 2023-12-11
-update-date: 2023-12-15
+created-date: 2023-12-11
+updated-date: 2023-12-15
+supported-platforms:
+  - iOS
+  - iPadOS
+  - macOS
+  - tvOS
 ---
 
-iOS, iPadOS, macOS, 그리고 tvOS에서 많은 사람들이 Dark Mode를 기본 인터페이스 스타일로 선택하며, 일반적으로 모든 앱과 게임이 이들의 선호도를 존중하기를 기대합니다. Dark Mode에서는 시스템이 모든 화면, 뷰, 메뉴, 및 컨트롤에 어두운 색상 팔레트를 사용하며, 더 어두운 배경에 대비하여 전경 콘텐츠를 돋보이게 하는 데 높은 지각 대비를 사용할 수도 있습니다.
+# Dark Mode
+
+<h2>다크 모드는 어두운 색상을 사용해 어두운 환경에 적합한 편안한 시각 환경을 제공하는 시스템 Appearance 설정입니다.</h2>
+
+<div align="center">
+  <img alt="foundations-dark-mode-intro" src="./.attachments/.dark-mode/foundations-dark-mode-intro~dark@2x.png" width="740"/>
+</div>
+
+<br />
+
+iOS, iPadOS, macOS, 그리고 tvOS에서 많은 사람들이 Dark Mode를 기본 인터페이스 스타일로 선택하며, 일반적으로 모든 앱과 게임이 이들의 선호도를 존중하기를 기대합니다. Dark Mode에서는 시스템이 모든 화면, 뷰, 메뉴, 및 컨트롤에 어두운 색상 팔레트를 사용하며, 더 어두운 배경에 대비하여 전경 콘텐츠를 돋보이게 하는 데 높은 대비를 사용할 수도 있습니다.
 
 ## Best practices
 
@@ -45,6 +59,7 @@ iOS, iPadOS, macOS, 그리고 tvOS에서 많은 사람들이 Dark Mode를 기본
 
 시스템 컬러를 사용하면 배경 및 전경 콘텐츠 간의 대비 비율을 좋게 만들 수 있습니다. 최소한 컬러 명암비가 4.5:1 보다 낮지 않아야 합니다. 커스텀 배경색과 전경색을 사용하는 경우 더 작은 텍스트에서 7:1 명암비를 갖추어야 합니다. 이러한 비율은 배경에서 전경 콘텐츠가 사용자 눈에 띄도록 보장하며, 콘텐츠가 접근성 지침을 충족하는 데 도움이 됩니다.
 
+<br />
 
 **흰색 배경의 색을 부드럽게 하세요.**
 
@@ -56,7 +71,7 @@ iOS, iPadOS, macOS, 그리고 tvOS에서 많은 사람들이 Dark Mode를 기본
 
 **가능하면 SF Symbols를 사용하세요.**
 
-Symbols는 다이나믹 컬러를 지원하기 때문에 색감이나 선명도를 추가하는 것도 모든 appearance 모드에서 잘 나타납니다. 자세한 내용은 [Color]()를 참고하세요.
+Symbols는 다이나믹 컬러를 지원하기 때문에 색감이나 선명도를 추가하는 것도 모든 appearance 모드에서 잘 나타납니다. 자세한 내용은 [Color](./color.md)를 참고하세요.
 
 <br />
 
@@ -84,7 +99,7 @@ primary, secondary, tertiary 그리고 quaternary 라벨 컬러는 자동으로 
 
 ## Platform considerations
 
-*tvOS에 대한 추가 고려 사항은 없습니다. 다크 모드는 visionOS 및 watchOS에서 지원하지 않습니다.*
+_tvOS에 대한 추가 고려 사항은 없습니다. 다크 모드는 visionOS 및 watchOS에서 지원하지 않습니다._
 
 ### iOS, iPadOS
 
@@ -110,14 +125,14 @@ primary, secondary, tertiary 그리고 quaternary 라벨 컬러는 자동으로 
 
 ### Related
 
-[Color](./foundations/colors.md)
+- [Color](./foundations/colors.md)
 
-[Materials]()
+- [Materials](./materials.md)
 
-[Typography]()
+- [Typography](./typography.md)
 
 ### Videos
 
-[What's New in iOS Design](https://developer.apple.com/videos/play/wwdc2019/808)
+- [What's New in iOS Design](https://developer.apple.com/videos/play/wwdc2019/808)
 
-[Implementing Dark Mode on iOS](https://developer.apple.com/videos/play/wwdc2019/214)
+- [Implementing Dark Mode on iOS](https://developer.apple.com/videos/play/wwdc2019/214)
