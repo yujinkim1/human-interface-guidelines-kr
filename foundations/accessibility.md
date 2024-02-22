@@ -1,7 +1,13 @@
 ---
 created-date: 2023-10-09
-updated-date: 2024-02-13
-supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
+updated-date: 2024-02-22
+supported-platforms:
+  - iOS
+  - iPadOS
+  - macOS
+  - tvOS
+  - watchOS
+  - visionOS
 ---
 
 # Accessibility
