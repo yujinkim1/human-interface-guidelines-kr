@@ -1,7 +1,13 @@
 ---
 created-date: 2023-12-07
-updated-date: 2024-02-13
-supported-platforms: iOS, iPadOS, macOS, tvOS, visionOS, watchOS
+updated-date: 2024-02-24
+supported-platforms:
+  - iOS
+  - iPadOS
+  - macOS
+  - tvOS
+  - watchOS
+  - visionOS
 ---
 
 # App icons
