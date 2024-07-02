@@ -2,6 +2,10 @@
 
 ## Overview
 
+> [!CAUTION]
+>
+> [휴먼 인터페이스 가이드라인](https://developer.apple.com/kr/design/human-interface-guidelines/)이 한글을 지원하므로 이 저장소는 더 이상 업데이트 하지 않습니다.
+
 이 저장소는 [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/)를 한국어로 번역한 문서입니다.
 
 문서 번역 및 저장소 관리에 대한 목적은 Apple에서 권장하는 디자인 가이드라인의 구성을 살펴보고, 어떤 내용을 담고 있는지 깊이있게 이해하고자 하는 것입니다.
